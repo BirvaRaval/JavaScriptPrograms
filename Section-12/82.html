@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Object Program-7</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>In this program we are accessing function property as method. </p>
+    <p id="demo"></p>
+    <script>
+        let car = {
+            carname: "Mercedes",
+            carprice: 100000,
+            carmodel: "AONE",
+            finalcall: function () {
+                return "Car Name is :" + car.carname + "<br/>Car Price is:" + car.carprice + "Car Model is:" + car.carmodel;
+            }
+
+        };
+
+        document.getElementById("demo").innerHTML = car.finalcall();
+    </script>
+</body>
+
+
+
+
+</html>
