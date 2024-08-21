@@ -1,0 +1,35 @@
+<!-- STRING FUNCTION  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>String Program-12</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <strong>SPLIT ARRAY PROGRAM</strong>
+    <br />
+    <br />
+    <button onclick="myfunc()">Want to display length click me :)</button>
+
+    <p id="demo1"></p>
+    <br />
+    <p id="demo2"></p>
+    <script>
+        function myfunc() {
+
+            let x = "Hello birva,you are,doing good birva,Are you okay birva."
+
+            document.getElementById("demo1").innerHTML = "ORIGINAL ARRAY:  " + x;
+            let y = x.split(",");
+            document.getElementById("demo2").innerHTML = "SPLITED ARRAY:  " + y[0];
+        }
+    </script>
+</body>
+
+
+
+
+</html>

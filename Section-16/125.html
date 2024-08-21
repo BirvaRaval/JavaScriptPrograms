@@ -1,0 +1,40 @@
+<!-- NUMBER FUNCTION  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Number Program-21</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <strong>INFINITY IS RETURN IF YOU CALCULATE NUMBER OUTSIDE LARGEST POSSIBLE</strong>
+    <br />
+    <br />
+    <button onclick="myfunc()">Want to display length click me :)</button>
+
+    <p id="demo1"></p>
+    <br />
+
+
+
+    <script>
+        function myfunc() {
+            let x = 23;
+            let y = "";
+            while (x != Infinity) {
+                x = x * x;
+                y = y + x + "<br/>"
+            }
+
+
+            document.getElementById("demo1").innerHTML = y;
+        }
+    </script>
+</body>
+
+
+
+
+</html>

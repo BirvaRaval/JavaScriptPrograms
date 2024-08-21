@@ -1,0 +1,34 @@
+<!-- NUMBER FUNCTION  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Number Program-17</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <strong>THE GLOBAL JAVA SCRIPT FUNCTION IS NAN IF RETURNS A VALUE IS NUMBER</strong>
+    <br />
+    <br />
+    <button onclick="myfunc()">Want to display length click me :)</button>
+
+    <p id="demo1"></p>
+    <br />
+
+
+
+    <script>
+        function myfunc() {
+            let x = 100 / "birva";
+
+            document.getElementById("demo1").innerHTML = isNaN(x);
+        }
+    </script>
+</body>
+
+
+
+
+</html>

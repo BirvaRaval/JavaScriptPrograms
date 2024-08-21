@@ -1,0 +1,35 @@
+<!-- NUMBER METHODS  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Number_method Program-4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <strong>THE TOFIXED() METHOD ROUNDS A NUMBER TO NUMBER OF DIGITS</strong>
+    <br />
+    <br />
+    <button onclick="myfunc()">Want to display length click me :)</button>
+
+    <p id="demo1"></p>
+    <br />
+    <script>
+        function myfunc() {
+
+            let x = 9.657;
+            document.getElementById("demo1").innerHTML = "VALUE OF: " + x.toFixed()
+                + "<br/>VALUE OF USING JUST DIRECT VALUES: " + x.toFixed(2)
+                + "<br/>VALUE OF USING JUST DIRECT VALUES: " + x.toFixed(4)
+                + "<br/>VALUE OF USING JUST DIRECT VALUES: " + x.toFixed(6)
+                + "<br/>VALUE OF USING JUST DIRECT VALUES: " + x.toFixed(8);
+        }
+    </script>
+</body>
+
+
+
+
+</html>

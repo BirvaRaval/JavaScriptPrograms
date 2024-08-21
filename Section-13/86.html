@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Function Program-3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" conten="width=device-width,initial-scale=1.0">
+
+</head>
+
+<body>
+    <p>In this program we are CREATING <strong> FUNCTION WITH 2 ARGUMENT PROGRAM</strong></p>
+    <form>
+        <input type="button" onClick="myfunc('Good Morning')" value="In the Morning">
+        <input type="button" onClick="myfunc('Good Evening')" value="In the Evening">
+
+    </form>
+    <p id="demo"></p>
+    <script>
+        function myfunc(txt) {
+            document.getElementById("demo").innerHTML = txt
+        }
+    </script>
+</body>
+
+</html>

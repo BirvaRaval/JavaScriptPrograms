@@ -1,0 +1,33 @@
+<!-- STRING FUNCTION  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>String Program-8</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+
+
+
+<body>
+    <strong>SEARCH FOR A TEXT WITHIN STRING AND RETURN IF FOUND : MATCH()</strong>
+    <br />
+    <br />
+    <button onclick="myfunc()">Want to display data click me :)</button>
+
+    <p id="demo"></p>
+    <script>
+        function myfunc() {
+
+            let x = "Hello birva you are doing good 'birva'.Are you okay."
+            let index = x.match(/rva/g);
+            document.getElementById("demo").innerHTML = index;
+        }
+    </script>
+</body>
+
+
+
+</html>
