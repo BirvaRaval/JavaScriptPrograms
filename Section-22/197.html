@@ -1,0 +1,42 @@
+<!-- Array Methods in JS -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ArrayMethod Program-4</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <p>Program of:
+        <strong>Join two arrays-concat()</strong>
+    </p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <p id="demo3"></p>
+    <script>
+        const male = ["Alex", "Ranbir", "Rhys"];
+        const female = ["Maya", "Jules", "Bridget"];
+
+
+        document.getElementById("demo").innerHTML = "Male Characters" + male;
+
+        document.getElementById("demo1").innerHTML = "Female Characters" + female;
+
+
+
+
+        const merge = female.concat(male);
+        document.getElementById("demo3").innerHTML = "After using Concat final Array is: <ul><li>" + merge + "</li></ul>";
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

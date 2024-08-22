@@ -1,0 +1,38 @@
+<!-- Array JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array Program-7</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <p>Program of:
+        <strong>Loop through an array</strong>
+    </p>
+
+    <p id="demo"></p>
+
+
+    <script>
+        const fruit = ["Banana", "Orange", "Apple", "Mango"];
+
+        let len = fruit.length;
+        let text = "<ul>";
+
+        for (let i = 0; i < len; i++) {
+            text += "<li>" +
+                fruit[i] +
+                "</li>";
+        }
+        text += "</ul>"
+
+        document.getElementById("demo").innerHTML = "Representing array in list" + text;
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ArraySort Program-13</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <p>Program of:
+        <strong>Sort object using numeric properties</strong>
+    </p>
+    <p id="demo"> </p>
+    <script>
+        const names = [
+            {
+                book: "Alex", role: "Hero",
+            },
+            {
+                book: "Rhys", role: "Villan",
+            },
+            {
+                book: "Christian", role: "SidePlay",
+            }
+        ]
+
+        displayNames();
+
+        function displayNames() {
+            document.getElementById("demo").innerHTML =
+                "Name is:" + names[0].book + " <br/>Role is: " + names[0].role + "<br>" +
+
+
+                "<br/>Name is:" + names[1].book + "<br/> Role is: " + names[1].role + "<br>" +
+
+
+                "<br/>Name is:" + names[2].book + " <br/>Role is: " + names[2].role + "<br>";
+        }
+    </script>
+
+</body>
+
+</html>

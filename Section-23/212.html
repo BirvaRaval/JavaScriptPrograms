@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ArraySort Program-9</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <p>Program of:
+        <strong>Find the lowest number in an array</strong>
+    </p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <button onclick="myfunc()">Click Me to get lowest number</button>
+    <script>
+        const objects = [12, 23, 34, -56, 90];
+
+        document.getElementById("demo").innerHTML = "Numbers are: " + objects + "<br/>";
+
+        function myfunc() {
+
+            const lowestnum = Math.min.apply(null, objects);
+
+
+            document.getElementById("demo1").innerHTML = "Lowest Number is: " + lowestnum;
+        }
+    </script>
+</body>
+
+</html>

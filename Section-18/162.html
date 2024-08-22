@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Maths Program-12</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <p>Program of:
+        <strong>Converting Celsius to Fahrenheit</strong>
+    </p>
+
+    <form>
+        <table border="2" cellpadding="10">
+            <tr>
+                <td>
+                    Celsius: <input type="text" id="c" onkeyup="convert('C')" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fahrenheit: <input type="text" id="f" onkeyup="convert('F')" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function convert(deg) {
+            var x;
+
+            if (deg === "C") {
+                x = document.getElementById("c").value;
+                document.getElementById("f").value = Math.round((x * 9 / 5) + 32);
+            } else if (deg === "F") {
+                x = document.getElementById("f").value;
+                document.getElementById("c").value = Math.round((x - 32) * 5 / 9);
+            }
+        }
+    </script>
+</body>
+
+</html>

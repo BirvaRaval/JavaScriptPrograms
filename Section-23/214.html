@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ArraySort Program-11</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <p>Program of:
+        <strong>Using a "homemade" myArrayMax method</strong>
+    </p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <button onclick="myfunc()">Click me to get lowest number</button>
+
+    <script>
+        const num = [10, 20, 30, 40, -50, 5, 6];
+
+        document.getElementById("demo").innerHTML = "Numbers are: " + num;
+
+        function myfunc() {
+            let len = num.length;
+            let min = Infinity;
+            while (len--) {
+                if (num[len] < min) {
+                    min = num[len];
+                }
+            }
+            document.getElementById("demo1").innerHTML = "Lowest number is: " + min;
+        }
+    </script>
+</body>
+
+</html>

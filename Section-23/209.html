@@ -1,0 +1,41 @@
+<!-- Array Sort in JS -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ArraySort Program-6</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <p>Program of:
+        <strong>Sort array numbers in random order</strong>
+    </p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <button onclick="myfunc()">Random Generation</button>
+    <script>
+        const objects = [12, 23, 34, -56, 90]
+
+        document.getElementById("demo").innerHTML = "Numbers are: " + objects + "<br/>";
+
+
+        function myfunc() {
+            objects.sort(
+                function () {
+                    return 0.5 - Math.random();
+                });
+            document.getElementById("demo1").innerHTML = "Numbers randomly generated: " + objects;
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ArraySort Program-14</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <p>Program of:
+        <strong>Sort object using String properties</strong>
+    </p>
+
+    <p id="demo"> </p>
+
+    <button onclick="myfunc()">Sort</button>
+    <script>
+        const names = [
+            {
+                book: "Alex", role: "Hero",
+            },
+            {
+                book: "Rhys", role: "Villan",
+            },
+            {
+                book: "Christian", role: "SidePlay",
+            }
+        ];
+
+        displayNames();
+        function myfunc() {
+            names.sort(function (a, b) {
+                let x = a.book.toLowerCase();
+                let y = b.book.toLowerCase();
+
+                if (x < y) {
+                    return -1;
+                }
+                if (x > y) {
+                    return 1;
+                }
+                return 0;
+            });
+            displayNames();
+        }
+
+        function displayNames() {
+            document.getElementById("demo").innerHTML =
+                "Name is: " + names[0].book + " <br/>Role is: " + names[0].role + "<br>" +
+                "<br/>Name is: " + names[1].book + "<br/> Role is: " + names[1].role + "<br>" +
+                "<br/>Name is: " + names[2].book + " <br/>Role is: " + names[2].role + "<br>";
+        }
+    </script>
+
+</body>
+
+</html>

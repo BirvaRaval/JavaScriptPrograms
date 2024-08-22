@@ -1,0 +1,26 @@
+<!-- Random Program JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Random Program-8</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <p>Program of:
+        <strong>How to return a random integer between x(included) and y (excluded)</strong>
+    </p>
+    <button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">Click Me</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+    </script>
+</body>
+
+</html>

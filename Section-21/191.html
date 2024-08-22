@@ -1,0 +1,33 @@
+<!-- Array JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array Program-9</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <p>Program of:
+        <strong>Add undefined "holes" to an array</strong>
+    </p>
+
+
+    <div id="demo"></div>
+
+    <script>
+        const fruit = ["Apple", "Banana", "Chickoo", "Mango"];
+        fruit[9] = "DragonFruit";
+        let len = fruit.length;
+        let text = "";
+        for (i = 0; i < len; i++) {
+            text += fruit[i] + "<br/>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+
+</body>
+
+</html>
