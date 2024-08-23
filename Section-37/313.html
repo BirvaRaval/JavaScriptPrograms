@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON STRINGIFY Program-5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Stringify functions using toString() method.
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+
+        const obj = { name: "Birva", today: new Date(), age: 24, city: "Ahmedabad" };
+
+
+        obj.age = obj.age.toString();
+
+
+        const obj1 = JSON.stringify(obj);
+
+
+        document.getElementById("demo").innerHTML = obj1;
+
+    </script>
+
+</body>
+
+</html>

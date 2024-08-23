@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON OBJECTS Program-5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Access nested JSON objects
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+        const obj1 = {
+            "name": "Birva",
+            "age": 30,
+            "cars": {
+                "cars1": "BMW M-5",
+                "cars2": "Porsche",
+                "cars3": "Ferrari"
+            }
+        };
+
+
+        document.getElementById("demo").innerHTML = "Inside Sub Car object view second car: " + obj1.cars.cars2;
+    </script>
+</body>
+
+</html>

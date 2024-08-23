@@ -1,0 +1,35 @@
+<!-- JSON OBJECTS -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON OBJECTS Program-4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Looping through property value
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+        const obj1 = '{"name":"birva","age":24,"hobby":null}';
+        const obj2 = JSON.parse(obj1);
+        let text = "";
+        let text1 = "";
+        for (const x in obj2) {
+            text1 += x + ",";
+            text += obj2[x] + ", ";
+        }
+
+
+
+        document.getElementById("demo").innerHTML = text1 + "<br/>" + text;
+    </script>
+
+</body>
+
+</html>

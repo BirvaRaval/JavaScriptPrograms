@@ -1,0 +1,38 @@
+<!-- ARRAY ITERATION -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Iteration Program-1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Array.forEach()
+        </strong>
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        let text = ""
+        var numbers = [44, 43, 23, 53, 78, 103]
+
+        numbers.forEach(myfunc);
+        document.getElementById("demo").innerHTML = text;
+
+        function myfunc(value) {
+            text += value + "<br/>"
+        }
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!-- JSON ARRAYS -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON ARRAYS Program-3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Looping through an array using for
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+        const person = '{"name":"Birva","age":24,"cars":["Mercedes","BMW","Ferrari"]}';
+        let text = "";
+        const person1 = JSON.parse(person)
+
+        for (let i = 0; i < person1.cars.length; i++) {
+            text += person1.cars[i] + ",";
+        }
+        document.getElementById("demo").innerHTML = text;
+
+    </script>
+</body>
+
+</html>

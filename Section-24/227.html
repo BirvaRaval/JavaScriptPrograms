@@ -1,0 +1,41 @@
+<!-- ARRAY ITERATION -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Iteration Program-10</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Array.find()
+        </strong>
+    </p>
+
+    <p> Here we are displaying first number which is over 30 .</p>
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+
+
+    <script>
+        const number1 = [43, 44, 53, 78, 103, 28, 10, 20];
+
+        const number2 = number1.find(myfunc);
+
+
+        document.getElementById("demo").innerHTML = "Array 1 is: " + number1 + "<br/>";
+
+        function myfunc(value) {
+            return value > 30;
+        }
+
+        document.getElementById("demo2").innerHTML = "first number which is over 30: " + number2 + "<br/>";
+
+    </script>
+</body>
+
+</html>

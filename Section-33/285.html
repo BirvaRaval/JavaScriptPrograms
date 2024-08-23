@@ -1,0 +1,36 @@
+<!-- JS OBJECTS PROPERTIES -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS OBJECTS PROPERTIES Program-3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Accessing properties using for in
+        </strong>
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            name: "Birva Raval",
+            hobby: "Drawing",
+            rollcall: 53
+        }
+        let text = "";
+        for (let x in person) {
+            text += person[x] + " ";
+        }
+        document.getElementById("demo").innerHTML =
+            text;
+
+    </script>
+
+
+</body>
+
+</html>

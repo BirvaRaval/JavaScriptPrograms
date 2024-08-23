@@ -1,0 +1,29 @@
+<!-- JSON OBJECTS -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON OBJECTS Program-2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Accessing properties using [property]
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+        const obj1 = '{"name":"birva","age":24,"hobby":null}';
+
+        const obj2 = JSON.parse(obj1);
+        document.getElementById("demo").innerHTML = "Name is :" + obj2["name"] + "<br/>" +
+            "Age is :" + obj2["age"] + "<br/>" +
+            "Hobby is :" + obj2["hobby"] + "<br/>";
+    </script>
+
+</body>
+
+</html>

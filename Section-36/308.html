@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON PARSE Program-6</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Parsing function
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+        const person = '{"name":"birva","age":24,"hobby":"drawing","birth":"2002-08-04"}';
+
+        const obj = JSON.parse(person);
+        obj.age = obj.age;
+
+        document.getElementById("demo").innerHTML = "Person Name is:" + obj.name + ", Age: " + obj.age;
+    </script>
+
+</body>
+
+</html>

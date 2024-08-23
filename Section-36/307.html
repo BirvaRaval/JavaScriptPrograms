@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON PARSE Program-5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Parsing Dates using the reviver function
+        </strong>
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        const person = '{"name":"birva","age":24,"hobby":"drawing","birth":"2002-08-04"}';
+        const person1 = JSON.parse(person, function (key, value) {
+            if (key === "birth") {
+                return new Date(value);
+            } else {
+                return value;
+            }
+        });
+
+        document.getElementById("demo").innerHTML = "Person:" + person1.name + "<br/> Birthdate: " + person1.birth.toDateString();
+    </script>
+
+</body>
+
+</html>

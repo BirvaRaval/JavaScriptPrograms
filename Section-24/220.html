@@ -1,0 +1,37 @@
+<!-- ARRAY ITERATION -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Iteration Program-3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Array.filter()
+        </strong>
+    </p>
+    <p>Here we are shpwocasing only thos elements which are above 30 using filter</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const number1 = [43, 44, 53, 78, 103, 28, 10, 20]
+
+        const number2 = number1.filter(myfunc);
+
+        document.getElementById("demo").innerHTML = "Array is: " + number1 + "<br/>";
+
+        function myfunc(value) {
+            return value > 30;
+        }
+
+        document.getElementById("demo1").innerHTML = "Array is: " + number2 + "<br/>";
+
+    </script>
+</body>
+
+</html>

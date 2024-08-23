@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Regular Expression Program-2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Search for an expression and replace it
+        </strong>
+    </p>
+    <p>In this program we are searching for Google and replacing it with Pinterest.</p>
+    <p id="demo"></p>
+    <script>
+        let text = "Do you want to Google?";
+        document.getElementById("demo").innerHTML = "Before Conversion: " + text;
+
+
+        text = text.replace(/google/i, "Pinterest");
+
+        document.getElementById("demo").innerHTML += "<br/>After Conversion: " + text;
+    </script>
+</body>
+
+</html>

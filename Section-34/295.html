@@ -1,0 +1,50 @@
+<!-- JSON OBJECTS -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON OBJECTS Program-7</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Modify Values using the bracket notation
+        </strong>
+    </p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        let x = "";
+        const obj1 = {
+            "name": "Birva",
+            "age": 30,
+            "cars": {
+                "cars1": "BMW M-5",
+                "cars2": "Porsche",
+                "cars3": "Ferrari"
+            }
+        };
+
+
+        for (let car in obj1.cars) {
+            x += obj1.cars[car] + "<br/>";
+        }
+        document.getElementById("demo").innerHTML = "Before modifying: Car List:<br/>" + x;
+
+
+        obj1.cars["cars2"] = "Mercedes";
+
+
+        x = "";
+        for (let car in obj1.cars) {
+            x += obj1.cars[car] + "<br/>";
+        }
+        document.getElementById("demo1").innerHTML = "After Modifying: Car List:<br/>" + x;
+    </script>
+</body>
+
+</html>

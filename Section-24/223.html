@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Iteration Program-6</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Array.every()
+        </strong>
+    </p>
+    <p> Here we are displaying whether all values are over 30 or not; if not, it will return false; if yes, it will
+        return true.</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        const number1 = [43, 44, 53, 78, 103, 28, 10, 20];
+        const number1_1 = [34, 35, 37, 38, 69, 70, 90];
+        const number2 = number1.every(myfunc);
+        const number2_1 = number1_1.every(myfunc);
+
+        document.getElementById("demo").innerHTML = "Array 1 is: " + number1 + "<br/>";
+        document.getElementById("demo1").innerHTML = "Array 2 is: " + number1_1 + "<br/>";
+
+        function myfunc(value) {
+            return value > 30;
+        }
+
+        document.getElementById("demo2").innerHTML = "All values over 30 in array 1: " + number2 + "<br/>";
+        document.getElementById("demo3").innerHTML = "All values over 30 in array 2: " + number2_1 + "<br/>";
+    </script>
+</body>
+
+</html>

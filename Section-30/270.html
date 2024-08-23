@@ -1,0 +1,36 @@
+<!-- Error handling Programs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Error Handling Program-2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            the try..catch statement with a confirm box </strong>
+    </p>
+    <input type="button" onclick="message()" value="View Message" />
+    <p id="demo"></p>
+    <script>
+        let text = "";
+        function message() {
+            try {
+                adddlert("Welcome Birva!")
+            } catch (err) {
+                text = "There was an error on this page.\n";
+                text += "Click OK to continue viewing this page.\n"
+                text += "OR Click on cancel to return to the google page\n";
+                if (!confirm(text)) {
+                    document.location.href = "https://google.com/"
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON ARRAYS Program-4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Access nested through JSON ARRAYS
+        </strong>
+    </p>
+
+    <p id="demo"></p>
+    <script>
+        const person = {
+            "name": "Birva",
+            "age": 24,
+            "cars": [
+                { "name": "Mercedes", "models": ["A4", "A6", "A7"] },
+                { "name": "BMW", "models": ["A11", "M89", "M7"] },
+                { "name": "Fiat", "models": ["500", "X5"] }
+            ]
+        };
+
+        let text = "";
+
+        for (let i in person.cars) {
+            text += "<h2>" + person.cars[i].name + "</h2>";
+            for (let j in person.cars[i].models) {
+                text += person.cars[i].models[j] + "<br>";
+            }
+        }
+
+        document.getElementById("demo").innerHTML = text;
+
+    </script>
+</body>
+
+</html>

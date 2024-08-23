@@ -1,0 +1,28 @@
+<!-- ARRAY ITERATION -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Iteration Program-9</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Array.lastIndexOf()
+        </strong>
+    </p>
+    <p>Let's Find the last index or position of elements of an array</p>
+    <p id="demo"></p>
+    <script>
+        const names = ["Alex", "Bob", "Christian", "David", "Rhys", "David"];
+
+        let pos = names.lastIndexOf("David") + 1;
+
+        document.getElementById("demo").innerHTML = "David is found at position: " + pos;
+    </script>
+</body>
+
+</html>

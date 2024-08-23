@@ -1,0 +1,40 @@
+<!-- ARRAY ITERATION -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Iteration Program-11</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Array.findIndex()
+        </strong>
+    </p>
+</body>
+<p> Here we are displaying index of first number which is over 30 .</p>
+<p id="demo"></p>
+
+<p id="demo2"></p>
+
+
+<script>
+    const number1 = [12, 44, 53, 78, 103, 28, 10, 20];
+
+    const number2 = number1.findIndex(myfunc);
+
+
+    document.getElementById("demo").innerHTML = "Array 1 is: " + number1 + "<br/>";
+
+    function myfunc(value) {
+        return value > 30;
+    }
+
+    document.getElementById("demo2").innerHTML = "Index of first number which is over 30: " + number2 + "<br/>";
+
+</script>
+
+</html>

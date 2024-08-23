@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON ARRAYS Program-1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Accessing array values
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+        const myJSON = '{"name":"Birva", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
+
+
+        const person = JSON.parse(myJSON);
+
+        document.getElementById("demo").innerHTML =
+            "Accessing first element of cars array: " + person.cars[0] +
+            "<br/>Entire Array is: " + person.cars;
+    </script>
+
+</body>
+
+</html>

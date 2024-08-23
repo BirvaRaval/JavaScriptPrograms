@@ -1,0 +1,38 @@
+<!-- ARRAY ITERATION -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Iteration Program-4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Array.reduce()
+        </strong>
+    </p>
+
+    <p>Here we are doing addition using reduce function</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const number1 = [43, 44, 53, 78, 103, 28, 10, 20]
+
+        const number2 = number1.reduce(myfunc);
+
+        document.getElementById("demo").innerHTML = "Array is: " + number1 + "<br/>";
+
+        function myfunc(total, value) {
+            return total + value;
+        }
+
+        document.getElementById("demo1").innerHTML = "The sum is: " + number2 + "<br/>";
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!-- Conditional Programs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conditional Program-3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            The else if Statement </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 10) {
+            greeting = "Good Morning!<br/>";
+        } else if (time < 20) {
+            greeting = "Good Day!<br/>";
+        } else {
+            greeting = "Good Evening!<br/>";
+        }
+
+        document.getElementById("demo").innerHTML = greeting;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conditional Program-4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Random Link
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+        let text;
+        if (Math.random() < 0.5) {
+            text = "<a href='https://www.google.com/'>Visit Google</a>";
+        } else {
+            text = "<a href='https://in.pinterest.com/'>Visit Pinterest</a>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+
+</html>

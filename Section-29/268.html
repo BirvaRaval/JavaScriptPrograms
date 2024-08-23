@@ -1,0 +1,35 @@
+<!-- Loops Programs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loops Program-8</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Use a for..in statement to loop through the elements of an objects </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+        const person =
+        {
+            name: "Birva",
+            age: 24,
+            hobby: "drawing"
+        };
+
+        let text = "";
+        for (let x in person) {
+            text += person[x] + "<br/> ";
+        }
+        document.getElementById("demo").innerHTML = text;
+
+    </script>w
+
+</body>
+
+</html>

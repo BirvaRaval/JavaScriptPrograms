@@ -1,0 +1,37 @@
+<!-- Error handling Programs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Error Handling Program-3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            The onerror event </strong>
+    </p>
+    <p id="demo"></p>
+    <input type="button" onclick="message()" value="CLICK ME!" />
+    <script>
+        onerror = handleErr;
+        var text = "";
+        function handleErr(msg, url, l) {
+            text = "There was an error in this page.\n\n";
+            text += "Error:" + msg + "\n\n";
+            text += "URL:" + url + "\n\n";
+            text += "Line:" + l + "\n\n";
+            text += "Click OK to conitnue.\n\n";
+            alert(text);
+            return true;
+        }
+        function message() {
+            adddlert("Welcome User!");
+        }
+    </script>
+
+</body>
+
+</html>

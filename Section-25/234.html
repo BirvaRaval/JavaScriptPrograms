@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Type Conversion Program-6</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Find out if a variable is a Date
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+        const names = new Date();
+        document.getElementById("demo").innerHTML = "Array is: " + names + "<br/>Is Date: " + isDate(names);
+
+        function isDate(myDate) {
+            return myDate instanceof Date;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!-- JS OBJECTS PROPERTIES -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS OBJECTS PROPERTIES Program-5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Deleting properties from objects
+        </strong>
+    </p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        const person = {
+            name: "Birva Raval",
+            hobby: "Drawing",
+            rollcall: 53
+        }
+
+        document.getElementById("demo").innerHTML =
+            "Before deleting Data:<br/>Name is :" + person.name + "<br/>" +
+            "Hobby is :" + person.hobby + "<br/>" +
+            "RollCall is :" + person.rollcall + "<br/>";
+
+
+        delete person.hobby;
+
+        document.getElementById("demo1").innerHTML =
+            "After deleting Data:<br/>Name is :" + person.name + "<br/>" +
+            "Hobby is :" + person.hobby + "<br/>" +
+            "RollCall is :" + person.rollcall + "<br/>";
+
+    </script>
+
+
+</body>
+
+</html>

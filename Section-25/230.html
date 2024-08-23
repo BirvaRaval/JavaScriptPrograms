@@ -1,0 +1,40 @@
+<!-- Type Conversion -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Type Conversion Program-2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Display the constructor of all variable types
+        </strong>
+    </p>
+
+    <p>Let's Identify Type of Constructors.</p>
+
+    <p id="demo"></p>
+    <script>
+        let x;
+        document.getElementById("demo").innerHTML =
+            "john".constructor + "<br/>" +
+            (3.14).constructor + "<br/>" +
+            false.constructor + "<br/>" +
+            1234n.constructor + "<br/>" +
+            {}.constructor + "<br/>" +
+            [].constructor + "<br/>" +
+            new Date().constructor + "<br/>" +
+            new Set().constructor + "<br/>" +
+            new Map().constructor + "<br/>" +
+            function () { }.constructor + "<br/>";
+
+
+
+    </script>
+</body>
+
+</html>

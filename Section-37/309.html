@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON STRINGIFY Program-1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Use JSON STRINGIFY
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+
+        const person = '{"name":"birva","age":24,"hobby":"drawing","birth":"2002-08-04"}';
+
+
+        const obj = JSON.parse(person);
+
+
+        const myJSON = JSON.stringify(obj);
+
+
+        document.getElementById("demo").innerHTML = myJSON;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!-- JSON HTML -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON HTML Program-3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Make an HTML drop down list based on JSON data.
+        </strong>
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        const dbParam = JSON.stringify({ table: "customers", limit: 20 });
+        const xmlhttp = new XMLHttpRequest();
+        xmlhttp.onload = function () {
+            const myObj = JSON.parse(this.responseText);
+            let text = "<select>"
+            for (let x in myObj) {
+                text += "<option>" + myObj[x].name + "</option>";
+            }
+            text += "</select>"
+            document.getElementById("demo").innerHTML = text;
+        }
+        xmlhttp.open("POST", "json_demo_html_table.php");
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlhttp.send("x=" + dbParam);
+    </script>
+</body>
+
+</html>

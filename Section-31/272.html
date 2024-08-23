@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Regular Expression Program-1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Search for an expression in a string
+        </strong>
+    </p>
+    <p>In this program we are searching for Google and returning its index.</p>
+    <p id="demo"></p>
+    <script>
+        let text = "Do you want to Google?";
+        let n = text.search(/google/i);
+        document.getElementById("demo").innerHTML = "Index of 'Google' is: " + n;
+    </script>
+
+</body>
+
+</html>

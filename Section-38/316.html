@@ -1,0 +1,33 @@
+<!-- JSON PHP -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON PHP Program-3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Get JSON from a database.
+        </strong>
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        const dbParam = JSON.stringify({ "limit": 10 });
+
+        const xmlhttp = new XMLHttpRequest();
+        xmlhttp.onload = function () {
+            document.getElementById("demo").innerHTML = this.responseText;
+        }
+        xmlhttp.open("GET", "json_demo_db.php?x=" + dbParam);
+        xmlhttp.send();
+    </script>
+
+
+</body>
+
+</html>

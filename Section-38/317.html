@@ -1,0 +1,38 @@
+<!-- JSON PHP -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON PHP Program-4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Loop through the result from a database.
+        </strong>
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        const obj = { "limit": 10 };
+        const dbParam = JSON.stringify(obj);
+        const xmlhttp = new XMLHttpRequest();
+        xmlhttp.onload = function () {
+            myObj = JSON.parse(this.responseText);
+            let text = ""
+            for (let x in myObj) {
+                text += myObj[x].name + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        };
+        xmlhttp.open("GET", "json_demo_db.php?x=" + dbParam);
+        xmlhttp.send();
+    </script>
+
+    <p>Try changing the "limit" prop
+</body>
+
+</html>

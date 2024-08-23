@@ -1,0 +1,43 @@
+<!-- JS OBJECTS -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS OBJECTS Program-9</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            JavaScript objects are mutuable
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        const person = {
+            name: "Birva Raval",
+            hobby: "Drawing",
+            rollcall: 53
+        }
+
+        document.getElementById("demo").innerHTML =
+            "Before Changing Data:<br/>Name is :" + person.name + "<br/>" +
+            "Hobby is :" + person.hobby + "<br/>" +
+            "RollCall is :" + person.rollcall + "<br/>";
+
+
+        const x = person;
+        x.rollcall = 43;
+
+        document.getElementById("demo1").innerHTML =
+            "After Changing Data:<br/>Name is :" + person.name + "<br/>" +
+            "Hobby is :" + person.hobby + "<br/>" +
+            "RollCall is :" + person.rollcall + "<br/>";
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!-- JSON PHP -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON PHP Program-2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Get JSON array from php.
+        </strong>
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        const xmlhttp = new XMLHttpRequest();
+        xmlhttp.onload = function () {
+            const myObj = JSON.parse(this.responseText);
+            document.getElementById("demo").innerHTML = myObj[2];
+        }
+        xmlhttp.open("GET", "demo_file.php", true);
+        xmlhttp.send();
+    </script>
+
+
+</body>
+
+</html>

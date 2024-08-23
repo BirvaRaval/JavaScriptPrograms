@@ -1,0 +1,28 @@
+<!-- Type Conversion -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Type Conversion Program-5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Find out if a variable is an array
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+        const names = ["Alex", "Bob", "Christian", "Dev", "Rhys"];
+        document.getElementById("demo").innerHTML = "Array is:" + names + "<br/>" + isArray(names);
+
+        function isArray(value) {
+            return value.constructor.toString().indexOf("Array") > -1;
+        }
+    </script>
+</body>
+
+</html>

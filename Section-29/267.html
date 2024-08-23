@@ -1,0 +1,31 @@
+<!-- Loops Programs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loops Program-7</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Break and continue a loop </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+        let text = "";
+        for (let i = 0; i < 10; i++) {
+            if (i === 5) {
+                continue;
+            }
+            text += "The Number is :" + i + "<br/>";
+
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+
+</html>

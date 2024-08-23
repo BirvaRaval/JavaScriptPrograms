@@ -1,0 +1,33 @@
+<!-- JSON JSONP -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON JSONP Program-4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            JSONP example with a callback function.
+        </strong>
+    </p>
+    <p>The PHP file returns a call to the function you send as a callback.</p>
+    <p id="demo"></p>
+
+    <script>
+        let s = document.createElement("script");
+        s.src = "demo_jsonp2.php?callback=myDisplayFunction";
+        document.body.appendChild(s);
+
+        function myDisplayFunction(myObj) {
+            document.getElementById("demo").innerHTML = myObj.name;
+        }
+    </script>
+
+
+</body>
+
+</html>

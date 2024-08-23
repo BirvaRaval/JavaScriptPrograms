@@ -1,0 +1,44 @@
+<!-- JSON ARRAYS -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON ARRAYS Program-6</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Delete Array items
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+
+        const person1 = JSON.parse('{"name":"Birva","age":24,"cars":["Mercedes","BMW","Ferrari"]}');
+        let text = "";
+
+
+        for (let i = 0; i < person1.cars.length; i++) {
+            text += person1.cars[i] + ",";
+        }
+        document.getElementById("demo").innerHTML = "Before Modifying: " + text;
+
+
+        delete person1.cars[1];
+
+
+        text = "";
+        for (let i = 0; i < person1.cars.length; i++) {
+            text += person1.cars[i] + ",";
+        }
+        document.getElementById("demo1").innerHTML = "After Modifying: " + text;
+
+    </script>
+
+</body>
+
+</html>

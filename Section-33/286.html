@@ -1,0 +1,46 @@
+<!-- JS OBJECTS PROPERTIES -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS OBJECTS PROPERTIES Program-4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Accessing new properties to existing objects
+        </strong>
+    </p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        const person = {
+            name: "Birva Raval",
+            hobby: "Drawing",
+            rollcall: 53
+        }
+
+        document.getElementById("demo").innerHTML =
+            "Before Adding Data:<br/>Name is :" + person.name + "<br/>" +
+            "Hobby is :" + person.hobby + "<br/>" +
+            "RollCall is :" + person.rollcall + "<br/>";
+
+
+        person.nationality = "Indian";
+
+        document.getElementById("demo1").innerHTML =
+            "After Adding Data:<br/>Name is :" + person.name + "<br/>" +
+            "Hobby is :" + person.hobby + "<br/>" +
+            "RollCall is :" + person.rollcall + "<br/>" +
+            "Nationality is :" + person.nationality + "<br/>";
+    </script>
+
+
+
+</body>
+
+</html>

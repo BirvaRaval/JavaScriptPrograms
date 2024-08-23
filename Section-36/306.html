@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON PARSE Program-4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Parsing Dates
+        </strong>
+    </p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const person = '{"name":"birva","age":24,"hobby":"drawing","birth":"2002-08-04"}';
+
+        const person1 = JSON.parse(person);
+        document.getElementById("demo").innerHTML = "Before Changing:<br/>Name is: " + person1.name +
+            "<br/>Age is: " + person1.age +
+            "<br/>Hobby is: " + person1.hobby +
+            "<br/>Birth is: " + person1.birth;
+
+
+        person1.birth = new Date("2024-08-06");
+
+        document.getElementById("demo1").innerHTML = "After Changing:<br/>Name is: " + person1.name +
+            "<br/>Age is: " + person1.age +
+            "<br/>Hobby is: " + person1.hobby +
+            "<br/>Birth is: " + person1.birth;
+    </script>
+
+</body>
+
+</html>

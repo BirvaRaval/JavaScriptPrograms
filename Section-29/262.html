@@ -1,0 +1,28 @@
+<!-- Loops Programs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loops Program-2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <p>Program of:
+        <strong>
+            Looping an Array </strong>
+    </p>
+    <p id="demo"></p>
+    <script>
+        const name = ["Alex", "Bob", "christian", "David", "Rhys"]
+        let text = "";
+        for (let i = 0; i < name.length; i++) {
+            text += "The Name is :" + name[i] + "<br>"
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+
+</html>
